@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Loups</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="stylebsd.css">
+   </head>
+   <body>
+       <!-- Went through the header and removed extraneous div tags and ids. please note the ids used on those div were also removed and so in the CSS the elements are referenced by the tags directly in conjunction with the one parent id created. Not ever element you want to style needs an id. This becomes hard to follow and ultimately the incorrect use of ids -->
+        <div id="wrapper">
+            <div id="#header">
+                <div id="headtop">
+                    <div id="headtopleft">
+                    </div>
+                    <div id="headtopright">
+                        <p> Text Size:<span class="fcol"> Normal </span>/ <span class="fcol"> Large </span>| <span class="fcol"> Donate </span>| <span class="fcol"> Contact </span> </p>
+                        <form>
+                            <input type=text placeholder="Search">
+                            <input type=submit value="Search">
+                        </form>
+                    </div>
+                </div>
+                  <div id="headmenu">
+                       <ul id="navs">
+                            <li class="navsli"> Home </li>
+                            <li class="navsli"> | </li>
+                            <li class="navsli"> About </li>
+                            <li class="navsli"> | </li>
+                            <li class="navsli"> Get FreeBSD </li>
+                            <li class="navsli"> | </li>
+                            <li class="navsli"> Docmentation </li>
+                            <li class="navsli"> | </li>
+                            <li class="navsli"> Community </li>
+                            <li class="navsli"> | </li>
+                            <li class="navsli"> Developers </li>
+                            <li class="navsli"> | </li>
+                            <li class="navsli"> Support </li>
+                            <li class="navsli"> | </li>
+                            <li class="navsli"> Foundation </li>
+                       </ul>
+                  </div>
+             </div>
+             <div id="navigation">
+                  <ul id="navid">
+                       <li>Developers </li>
+                       <li>Developer's Handbook </li>
+                       <li>Porter's Handbook </li>
+                       <li>Sourcecode repositories </li>
+                       <li>Release Engineering </li>
+                       <li>Platforms </li>
+                       <li>Project Ideas </li>
+                       <li>Contributing </li>
+                  </ul>
+             </div>
+             <div id="maincontent">
+                  <h4 class="brks"> FreeBSD/ppc Project </h4>
+                  <div id="content">
+                      <h6> Introduction </h6>
+                      <p> The FreeBSD/ppc project pages contain information about the FreeBSD port to the PowerPC@ architecture.  As with the port itself, these pages are still a work in progress. </p>
+                      <h6 class="brks"> Table of Contents </h6>
+                      <ul>
+                           <li>Status</li>
+                           <li>Latest News</li>
+                           <li>Port FAQs</li>
+                           <li>Supported Hardware</li>
+                           <li>FreeBSD/ppc mailing list</li>
+                           <li>Known Issues</li>
+                           <li>Documentation, White Papers, Utilities</li>
+                           <li>Other links of interest </li>
+                      </ul>
+                      <h6 class="brks"> Status </h6>
+                      <p> The FreeBSD/ppc port is still a <span class="dec"> Tier 2</span> platform.  That means it is not being fully supported by our security officer; release engineers and toolchain maintainers. </p>
+                      <div class="brks hrule"></div>
+
+                      <h6 class="brks"> Latest News</h6>
+                      <ul id="excep">
+                           <li><b> 03 April, 2009</b>: Support for the PowerPC G5 has been committed to SVN </li>
+                           <li> <b>03 March, 2008</b>: Support for Freescale@ PowerQUICC III MPC85XX family system-on-chip development boards has been committed into CVS </li>
+                           <li> <b>23 February, 2008</b>: FreeBSD 7.0 is the first release to officially support the FreeBSD/ppc port. </li>
+                      </ul>
+                        <div class="brks hrule"></div>
+                       <h6 class="brks"> Frequently Asked Questions</h6>
+                       <ol class="brks" id="orders">
+                            <li> How can I install FreeBSD/ppc </li>
+                            <li> How to use ports on FreeBSD/ppc? </li>
+                            <li> Who should I contact ? </li>
+                      </ol>
+                       <h6 class="brks"> How can I install FreeBSD/ppc?</h6>
+                       <p> ISO images of FreeBSD 8.2 suitable for New-World Macs are available for download, for details on how to obtain these the <span class="dec">release announcement.</span>  Please follow instructions given <span id="dec"> here.</span></p>
+                       <h6 class="brks"> How to use ports on FreeBSD/ppc?</h6>
+                  </div>
+             </div>
+        </div>
+   </body>
+</html>

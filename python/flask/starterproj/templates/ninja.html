@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Great Number Game</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='ninja.css')}}">
+  </head>
+  <body>
+          <div id="wrapper">
+
+               <p>
+                    <p> this pot : {{ninjapot}} </p>
+                    <label> Your Gold: </label>
+                    <input type=text name="ninjagold" value="{{balance}}" />
+               </p>
+               <div class="box">
+                    <p> Farm </p>
+                    <p> (earns 10 - 20 golds) </p>
+                    <form action="/process_money" method="POST">
+                         <input type="hidden" name="building" value="farm" />
+                         <input type=submit value="Find Gold!" />
+                    </form>
+               </div>
+               <div class="box">
+                    <p> Cave </p>
+                    <p> (earns 5 - 10 golds) </p>
+                    <form action="/process_money" method="POST">
+                         <input type="hidden" name="building" value="cave" />
+                         <input type=submit value="Find Gold!" />
+                    </form>
+               </div>
+               <div class="box">
+                    <p> House </p>
+                    <p> (earns 2 - 5  golds) </p>
+                    <form action="/process_money" method="POST">
+                         <input type="hidden" name="building" value="house" />
+                         <input type=submit value="Find Gold!" />
+                    </form>
+               </div>
+               <div class="box">
+                    <p> Casino</p>
+                    <p> (earns/takes 0 - 50 golds) </p>
+                    <form action="/process_money" method="POST">
+                         <input type="hidden" name="building" value="casino" />
+                         <input type=submit value="Find Gold!" />
+                    </form>
+               </div>
+               <p> Activities:</p>
+               <div id="log">
+
+                         {% for messagew in session['actsw'] %}
+                              <p id="green">{{ messagew }}</p>
+                         {% endfor %}
+                         <p></p>
+
+                         {% for items in session['actsl'] %}
+                              <p id="red">   {{ items }}</p>
+                         {% endfor %}
+
+
+
+               </div>
+
+          </div>
+
+  </body>
+</html>

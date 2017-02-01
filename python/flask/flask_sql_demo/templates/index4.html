@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Users App</title>
+</head>
+<body>
+  <h1>Users App</h1>
+  <div>
+       {% for user in users %}
+       <form action="/users/{{id}}" method="post">
+        <input type="text" name="name" value="{{user['name']}}">
+        <input type="text" name="email" value=" {{user['email']}}">
+        <input type="submit" value="editUser">
+        {% endfor %}
+  </div>
+
+ <div>
+      <a href="http://127.0.0.1:5000/users/{{id}}" > Show   </a>
+      <a href="http://127.0.0.1:5000/" > Go Back </a>
+</div>
+
+</body>
+</html>

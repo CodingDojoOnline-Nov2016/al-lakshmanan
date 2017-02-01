@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Users App</title>
+</head>
+<body>
+  <h1>Users App</h1>
+  <div>
+       {% for user in users %}
+       <h3> Full Name: {{user['name']}}</h3>
+       <h3> Email: {{user['email']}}</h3>
+       <h3> Created_at:  {{user['created_at'].strftime('%B %Y')}}</td>
+       {% endfor %}
+  </div>
+
+ <div>
+      <a href="http://127.0.0.1:5000/users/{{id}}/edit" > Edit   </a>
+      <a href="http://127.0.0.1:5000/users/{{id}}/destroy" > Delete </a>
+</div>
+
+</body>
+</html>

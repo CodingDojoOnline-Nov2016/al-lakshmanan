@@ -1,0 +1,54 @@
+<html>
+    <head>
+         <title>Survey Assignment </title>
+         <meta charset="UTF-8">
+
+
+    </head>
+    <body>
+         <h1> Survey </h1>
+         {% with messages = get_flashed_messages() %}
+                    {% for message in messages %}
+                         <p class="red">{{ message }}</p>
+                    {% endfor %}
+          {% endwith %}
+         <div class="surveysx">
+              <form action="/sur" method="post">
+
+                   <p>
+                        <label> Name of the Player </label>
+                        <input type=text name="name" placeholder="name of the player">
+                   </p>
+                   <p>
+                       <label> Email Id </label>
+                       <input type=text name="email" placeholder="Email ID">
+                  </p>
+                   <p>
+                        <label>Dojo Location</label>
+                        <select name="location">
+                             <option value="Sanjose"> San Jose</option>
+                             <option value="Burbank">Burbank</option>
+                        </select>
+                   </p>
+                   <p>
+                        <label> Favorite Language </label>
+                        <select name="language">
+                             <option value="python">Python</option>
+                             <option value="cobol">cobol</option>
+                        </select>
+
+                   </p>
+                   <p>
+                        <label> Comment </label>
+                        <textarea name="comments" cols="50"  rows="10"></textarea>
+                  </p>
+                   <p>
+                        <input type=submit value="Submit">
+                   </p>
+              </form>
+          </div>
+
+     </body>
+
+
+</html>

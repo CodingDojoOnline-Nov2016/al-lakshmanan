@@ -1,0 +1,95 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+#wrapper{
+ width: 970px;
+ background-color: #f2f2f2;
+ margin: 0px auto;
+ padding-top: 10px;
+ padding-bottom: 20px;
+}
+#header{
+ height: 75px;
+ background-color: #dbdcdd;
+ border-radius: 20px;
+ margin-left: 20px;
+ margin-right: 20px;
+ margin-bottom: 30px;
+
+}
+#navigation{
+ width: 200px;
+ background-color:#dbdcdd;
+ border-radius: 20px;
+ display: inline-block;
+ margin-left: 20px;
+ margin-right: 20px;
+ padding-top: 10px;
+ padding-left: 30px;
+ font-style:normal;
+ color: blue;
+ font: 8px;
+}
+#subul{
+    padding-left: 14px;
+}
+#mainul{
+    padding-left: 20px;
+    color: blue;
+}
+#maincontul{
+    padding-left: 40px;
+    padding-right: 10px;
+}
+.art{
+
+}
+.mainc{
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: sans-serif monospace;
+}
+.mainss{
+    color: blue;
+    text-decoration: underline;
+    font-weight: lighter;
+    font-family: sans-serif monospace;
+}
+p{
+    text-align: left;
+}
+#main_content{
+ width: 650px;
+ border-radius: 20px;
+ background-color: #a9abad;
+ display: inline-block;
+ vertical-align: top;
+ padding-top: 20px;
+ padding-left: 20px;
+ padding-bottom: 10px;
+}
+
+#mainpara{
+     font-size: 16px;
+     font-weight: 200;
+}
+
+#footer{
+ height: 50px;
+ border-radius: 20px;
+ background-color: #dbdcdd;
+ margin-left: 20px;
+ margin-right: 20px;
+ margin-top: 30px;
+ padding-left: 20px;
+ padding-top: 04px;
+ }
+
+#h1tags{
+font-size: 48px;
+padding-left: 10px;
+font-family: serif sans-serif;
+}

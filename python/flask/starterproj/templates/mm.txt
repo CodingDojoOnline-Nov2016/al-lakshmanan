@@ -1,0 +1,24 @@
+total = w xh = 900px x 900px
+
+header - 900 x 60
+background color = #1f3136
+
+menu  - 900x 30px
+
+grad color :  #374c52  x #1f3136 - vertical(top/bottom)
+
+div2 - picture - 900 x 84
+
+div 3  -  900 x726
+margin - 21 px top and 15 px bottom  - grad color #486158 and #23302e  - horizontal(left x right)
+
+div 4 - 900 x 690  - bg color - grad  -   #2c3e45  x   #1f3136 
+div 4-2 - 684 x 690 - right margin 16  - background color - #24393d * #2d4d49 (top/bottom)  - border radius 
+div 4-2 - div1 - 425 x 626 - margin - left 33 px - margin right 30px - MARGIN TOP - 38 - MARGIN- BOTTOM - 21 PX
+        - div2 - 160
+div 4 -1  200 x 690
+search 135 x 25 
+div 4-1box1 - 173 x 130  - 176 x 36 - div
+div 4-1box2 - 173 x 153
+div 4-1box3 - 173 x 101 - pic
+div 4-1box4 - 173 x 130  - 176 x 36 - div

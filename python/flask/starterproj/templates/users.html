@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Form Test Show</title>
+  </head>
+  <body>
+       {% with messages = get_flashed_messages() %}
+                 {% for message in messages %}
+                      <p class="red">{{ message }}</p>
+                 {% endfor %}
+       {% endwith %}
+    <h1>User:</h1>
+    <form action="/users" method="POST">
+         <p>
+              <label> First Name: </label>
+             <input type=text name="fname" />
+        </p>
+        <p>
+            <label> Last Name: </label>
+            <input type=text name="lname" />
+       </p>
+       <p>
+           <label> Email: </label>
+           <input type=text name="email" />
+      </p>
+      <p>
+          <label> Password: </label>
+          <input type=text name="pass" />
+     </p>
+     <p>
+         <label> Confirm Password: </label>
+         <input type=text name="passc" />
+    </p>
+    <p>
+        <label> BirthDate: </label>
+        <input type="date" name="bday">
+    </p>
+     <p>
+         <input type=submit value="Create User" />
+      </p>
+    </form>
+
+  </body>
+</html>

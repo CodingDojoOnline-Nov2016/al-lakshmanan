@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Great Number Game</title>
+    <style>
+    *{
+     margin: 0px;
+     padding: 0px;
+    }
+
+    #wrapper {
+         width: 902px;
+         margin: 0 auto;
+         background-color: white;
+         padding-bottom: 2px;
+
+    }
+
+    #box {
+         width: 300px;
+         height: 200px;
+         margin: 0 auto;
+         padding-top: 100px;
+         padding-left: 100;
+         color: white;
+         background-color: {{clr}};
+
+    }
+
+    </style>
+
+  </head>
+  <body>
+          <div id="wrapper">
+              <h1>Welcome to the Great Number Game!</h1>
+              <h2> I am thinking of a number between 1 and 100 - {{rn}} </h2>
+              {% with messages = get_flashed_messages() %}
+          			{% for message in messages %}
+          				<p class="red">{{ message }}</p>
+          			{% endfor %}
+          		{% endwith %}
+              <h2> Take a guess! </h2>
+              {% if rslt %}
+              <div id="box">
+                   <h2> {{rslt}} </h2>
+                   {% if clr == 'green' %}
+                   <form action="/great" >
+                         <input type=submit value="Play Again">
+                    </form>
+                    {% endif %}
+              </div>
+              {% endif %}
+              <form action="/greatgame" method="POST">
+                    <input type=number name="guess">
+                    <input type=submit value="Submit">
+               </form>
+          </div>
+
+  </body>
+</html>
